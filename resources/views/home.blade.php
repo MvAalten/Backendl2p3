@@ -24,6 +24,21 @@
     </form>
 </div>
 
+<div class="w-full h-auto p-5 border-[3px] border-black">
+    <h2>All dishes</h2>
+    @foreach($posts as $post)
+        <div class="bg-gray-800 p-5 m-5"></div>
+        <h3>{{$post['title']}}</h3>
+        {{$post['body']}}
+        <p><a href="/edit-post/{{$post->id}}">Edit</a></p>
+        <form action="/delete-post/{{$post->id}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button>Delete</button>
+        </form>
+    @endforeach
+</div>
+
 
 @else
     <div class="border-[3px] border-black">
