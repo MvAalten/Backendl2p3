@@ -19,7 +19,7 @@
     <form action="/create-post" method="POST">
         @csrf
         <input type="text" name="title" placeholder="Add a dish">
-        ><textarea name="body" placeholder="Dish description"></textarea>
+        <textarea name="body" placeholder="Dish description"></textarea>
         <button>Save post</button>
     </form>
 </div>
