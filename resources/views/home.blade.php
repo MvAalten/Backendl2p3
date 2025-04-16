@@ -9,7 +9,7 @@
 <body class="bg-yellow-50 text-gray-800 font-sans min-h-screen">
 
 <div class="max-w-3xl mx-auto py-10 px-6">
-    <h1 class="text-4xl font-bold text-center text-amber-900 mb-8">🍽️ Welcome to Our Restaurant</h1>
+    <h1 class="text-4xl font-bold text-center text-amber-900 mb-8">🍽️ Welcome to Byte Bistro</h1>
 
     @auth
         <div class="mb-6 text-center">
